@@ -1,0 +1,88 @@
+/* Home.css */
+
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #c3dafe 0%, #fbcfe8 100%);
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  animation: bgGradient 15s ease infinite;
+}
+
+@keyframes bgGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-content {
+  text-align: center;
+  max-width: 700px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.home-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #0a090a;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.home-subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.home-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: #4b5563;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #2563eb;
+  transform: scale(1.1);
+}
+
+.social-icons .github:hover {
+  color: #181717;
+}

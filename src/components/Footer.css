@@ -1,0 +1,44 @@
+/* Footer.css */
+.footer {
+  background-color: #2d3748; /* Dark Gray */
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-link {
+  font-size: 1.125rem;
+  color: #63b3ed; /* Light Blue */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #3182ce; /* Darker Blue */
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  color: #e2e8f0; /* Light Gray */
+}
+
+.footer-text a {
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-text a:hover {
+  color: #edf2f7; /* Lighter Gray */
+}

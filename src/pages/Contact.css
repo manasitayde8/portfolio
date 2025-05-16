@@ -1,0 +1,119 @@
+/* Container */
+.contact-wrapper {
+   background: linear-gradient(135deg, #c3dafe 0%, #fbcfe8 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Animated gradient background for the card */
+@keyframes gradientBG {
+  0%, 100% {
+    background-color: #1f1e21; /* dark purple */
+  }
+  50% {
+    background-color: #323138; /* blueish purple */
+  }
+}
+
+.contact-card {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 380px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: transparent;
+  animation: gradientBG 6s ease-in-out infinite;
+}
+
+/* Glowing Contact Me button at top */
+.contact-header-btn {
+  align-self: center;
+  background: none;
+  border: 2px solid #0af;
+  border-radius: 12px;
+  color: #0af;
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  cursor: default;
+  box-shadow: 0 0 15px 2px #0af;
+  pointer-events: none;
+}
+
+/* Form styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: none;
+  border: none;
+  border-bottom: 1.5px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.3rem 0;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom-color: #0af;
+}
+
+/* Send Message button */
+.send-btn {
+  background-color: #0af;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover:not(:disabled) {
+  background-color: #007acc;
+}
+
+.send-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Form status messages */
+.form-status {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.form-status.success {
+  color: #0f0;
+}
+
+.form-status.error {
+  color: #f00;
+}
